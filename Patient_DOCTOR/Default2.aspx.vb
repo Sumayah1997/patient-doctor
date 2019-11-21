@@ -9,7 +9,7 @@ Partial Class Default2
     Dim cmd As New SqlCommand
     Dim dr As SqlDataReader
     Protected Sub btnSubmit_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles btnSubmit.Click
-        If txtId.Text = "" Or txtpw.Text = "" Then
+        If txtId.Text = "" Or txtpw.Text = "" Then  'the other 
             Response.Write("<script>alert(' الرجاء التأكد من اكمال جميع الحقول   ');window.location.href='default2.aspx';</script>")
             Exit Sub
         End If
